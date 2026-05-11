@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puntos Futbol</title>
+    <meta name="description" content="Suscripciones, subastas y recompensas para fanaticos del futbol.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css" rel="stylesheet">
+    <link href="app/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header fixed-top" data-header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid page-shell">
+          <a class="navbar-brand" href="#inicio" aria-label="Puntos Futbol">
+            <img src="app/img/PuntosFutbol-logo.svg" alt="Puntos Futbol">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="#subastas">Subastas</a></li>
+              <li class="nav-item"><a class="nav-link" href="#suscripcion">Suscripción</a></li>
+              <li class="nav-item"><a class="nav-link" href="#puntos">Gana más puntos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#login">Iniciar sesión</a></li>
+              <li class="nav-item"><a class="nav-link nav-cta" href="#unete">Suscríbeme</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="app/img/headerbg.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid page-shell hero-shell">
+          <div class="hero-copy reveal">
+            <h1>Que nada<br>detenga tu<br><span>pasión futbolera</span></h1>
+            <div class="script-stroke"></div>
+            <div class="hero-benefits">
+              <article>
+                <i class="ti ti-credit-card"></i>
+                <div>
+                  <strong>Compra segura</strong>
+                  <p>Transacciones protegidas.</p>
+                  <img class="hero-stripe" src="app/img/powered-by-stripe.svg" alt="Powered by Stripe">
+                </div>
+              </article>
+              <article>
+                <i class="ti ti-users"></i>
+                <div>
+                  <strong>Comunidad futbolera</strong>
+                  <p>Conecta con otros fanáticos.</p>
+                </div>
+              </article>
+              <article>
+                <i class="ti ti-eye"></i>
+                <div>
+                  <strong>Pasión que vale más</strong>
+                  <p>Subasta con puntos y recibe artículos.</p>
+                </div>
+              </article>
+              <article>
+                <i class="ti ti-device-gamepad-2"></i>
+                <div>
+                  <strong>Actividades y recompensas</strong>
+                  <p>Participa en retos para incrementar puntos.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="hero-items reveal stagger-1" aria-hidden="true">
+            <img src="app/img/headeritems.avif" alt="">
+          </div>
+
+        </div>
+        <img class="sect-transition" src="app/img/transition-1.avif" alt="" aria-hidden="true" style="margin-bottom:-1px;">
+      </section>
+      
+      <section class="section section-white auctions" id="subastas">
+        <div class="container-fluid page-shell">
+          <div class="section-heading reveal">
+            <span></span>
+            <div>
+              <h2>Participa en las <em>subastas</em></h2>
+              <p><b>Suscríbete y participa en las Subastas Puntos Futbol.</b><br>Cada martes y jueves encontrarás artículos de diferentes ligas de futbol.</p>
+            </div>
+            <span></span>
+          </div>
+
+          <div class="steps reveal stagger-1">
+            <article>
+              <div class="step-circle"><i class="ti ti-search"></i></div>
+              <h3>Explora</h3>
+              <p>Descubre artículos increíbles en subasta.</p>
+            </article>
+            <article>
+              <div class="step-circle"><i class="ti ti-gavel"></i></div>
+              <h3>Participa</h3>
+              <p>Usa tus puntos para hacer tu oferta.</p>
+            </article>
+            <article>
+              <div class="step-circle"><i class="ti ti-users"></i></div>
+              <h3>Compite</h3>
+              <p>Mejora tu oferta y sigue en la puja.</p>
+            </article>
+            <article>
+              <div class="step-circle"><i class="ti ti-trophy"></i></div>
+              <h3>Gana</h3>
+              <p>Si eres el mejor postor, es tuyo.</p>
+            </article>
+            <article>
+              <div class="step-circle"><i class="ti ti-package"></i></div>
+              <h3>Recibe</h3>
+              <p>Te lo enviamos a tu casa.</p>
+            </article>
+          </div>
+
+          <div class="auction-board reveal stagger-2">
+
+            <div class="auction-card card-explore">
+              <b class="card-number">1</b>
+              <div class="card-icon"><i class="ti ti-search"></i></div>
+              <div class="card-copy">
+                <h3>Explora</h3>
+                <p>Descubre artículos increíbles en subasta.</p>
+              </div>
+              <div id="auctionItemsCarousel" class="carousel slide prize-carousel" data-bs-ride="carousel" data-bs-interval="1800" data-bs-pause="false" data-bs-touch="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="prize-strip">
+                      <div><img src="app/img/items/item6.avif" alt="Artículo en subasta"></div>
+                      <div><img src="app/img/items/item5.avif" alt="Artículo en subasta"></div>
+                      <div><img src="app/img/items/item4.avif" alt="Artículo en subasta"></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="prize-strip">
+                      <div><img src="app/img/items/item3.avif" alt="Artículo en subasta"></div>
+                      <div><img src="app/img/items/item2.avif" alt="Artículo en subasta"></div>
+                      <div><img src="app/img/items/item1.avif" alt="Artículo en subasta"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="auction-card card-bid">
+              <b class="card-number">2</b>
+              <div class="card-icon"><i class="ti ti-gavel"></i></div>
+              <div class="card-copy">
+                <h3>Participa</h3>
+                <p>Usa tus puntos para hacer tu oferta.</p>
+              </div>
+              <div class="offer-control">
+                <small>+ Tu oferta</small>
+                <div><strong>900</strong><span>PF</span></div>
+
+              </div>
+              <button class="blue-button">Confirmar oferta</button>
+            </div>
+
+            <div class="auction-product">
+              <video class="auction-product-img" autoplay muted loop playsinline preload="metadata" aria-label="Jersey en subasta">
+                <source src="app/img/subasta-ejemplo.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="auction-card card-compete">
+              <b class="card-number">3</b>
+              <div class="card-icon"><i class="ti ti-users"></i></div>
+              <div class="card-copy">
+                <h3>Compite</h3>
+                <p>Mejora tu oferta y sigue en la puja.</p>
+              </div>
+              <div class="versus">
+                <div><small>Tú</small><strong>900 PF</strong></div>
+                <b>VS</b>
+                <div><small>Otros</small><strong>800 PF</strong></div>
+              </div>
+              <div class="status-line"><span></span></div>
+              <small class="status-text"><i class="ti ti-clock"></i> La subasta sigue activa</small>
+            </div>
+
+            <div class="auction-card card-win">
+              <b class="card-number">4</b>
+              <div class="card-icon"><i class="ti ti-trophy"></i></div>
+              <div class="card-copy">
+                <h3>Gana</h3>
+                <p>Si eres el mejor postor, es tuyo.</p>
+              </div>
+              <div class="winner-message">
+                <i class="ti ti-circle-check"></i>
+                <strong>¡Ganaste!</strong>
+                <p>Tu oferta de 900 PF ha sido la ganadora.</p>
+              </div>
+            </div>
+
+            <div class="auction-card card-receive">
+              <b class="card-number">5</b>
+              <div class="card-icon"><i class="ti ti-package"></i></div>
+              <div class="card-copy">
+                <h3>Recibe</h3>
+                <p>Te lo enviamos directo a casa.</p>
+              </div>
+              <img class="package-img" src="app/img/subasta-caja.avif" alt="Caja de envio">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="suscription-transition"></div>
+      <section class="section pricing" id="suscripcion">
+        <div class="container-fluid page-shell">
+          <div class="section-heading reveal">
+            <span></span>
+            <div>
+              <h2>Elige cómo vivir tu <em>pasión</em></h2>
+              <p>Cada suscripción te da puntos semanales para participar,<br>vivir tus Puntos Futbol y obtener artículos únicos.</p>
+            </div>
+            <span></span>
+          </div>
+
+          <div class="plans reveal stagger-1">
+            <article class="plan plan-classic">
+              <i class="ti ti-ball-football"></i>
+              <h3>Clásico</h3>
+              <strong>Gratis</strong>
+              <p><b>100</b><span>Puntos Futbol<em>Por semana</em></span></p>
+              <ul>
+                <li><i class="ti ti-circle-check"></i>Puntos Futbol por semana</li>
+                <li><i class="ti ti-circle-check"></i>Perfil de fan</li>
+                <li><i class="ti ti-circle-check"></i>Participa en la pregunta del día</li>
+                <li><i class="ti ti-circle-check"></i>Participa en los desafíos</li>
+              </ul>
+              <a href="#unete">Empieza gratis</a>
+            </article>
+
+            <article class="plan plan-gold">
+              <div class="recommended">Recomendada</div>
+              <i class="ti ti-crown"></i>
+              <h3>Oro</h3>
+              <strong>$199<small>/mes</small></strong>
+              <p><b>500</b><span>Puntos Futbol<em>Por semana</em></span></p>
+              <ul>
+                <li><i class="ti ti-circle-check"></i>Puntos Futbol por semana</li>
+                <li><i class="ti ti-circle-check"></i>Perfil de fan legendario</li>
+                <li><i class="ti ti-circle-check"></i>Participa en la pregunta del día</li>
+                <li><i class="ti ti-circle-check"></i>Participa en los desafíos</li>
+              </ul>
+              <a href="#unete">Elegir oro</a>
+            </article>
+
+            <article class="plan plan-silver">
+              <i class="ti ti-medal"></i>
+              <h3>Plata</h3>
+              <strong>$99<small>/mes</small></strong>
+              <p><b>250</b><span>Puntos Futbol<em>Por semana</em></span></p>
+              <ul>
+                <li><i class="ti ti-circle-check"></i>Puntos Futbol por semana</li>
+                <li><i class="ti ti-circle-check"></i>Perfil de fan avanzado</li>
+                <li><i class="ti ti-circle-check"></i>Participa en la pregunta del día</li>
+                <li><i class="ti ti-circle-check"></i>Participa en los desafíos</li>
+              </ul>
+              <a href="#unete">Elegir plata</a>
+            </article>
+          </div>
+
+          <div class="trust-strip reveal stagger-2">
+            <article><i class="ti ti-shield-check"></i><strong>Cancela cuando quieras</strong><span>Sin permanencia, sin complicaciones.</span></article>
+            <article><i class="ti ti-lock"></i><strong>Pago seguro</strong><span>Tus datos siempre protegidos.</span></article>
+            <article><i class="ti ti-refresh"></i><strong>Puntos cada semana</strong><span>Se acreditan automáticamente.</span></article>
+          </div>
+          <img class="stripe" src="app/img/powered-by-stripe-light.svg" alt="Powered by Stripe">
+        </div>
+      </section>
+
+      <section class="points" id="puntos">
+        <img class="sect-transition" src="app/img/transition-2.avif" alt="" aria-hidden="true">
+        <div class="container-fluid page-shell points-shell">
+          <div class="points-title reveal">
+            <h2>Gana más puntos</h2>
+            <p>todos los días</p>
+          </div>
+
+          <div class="dark-heading reveal">
+            <span></span>
+            <div>
+              <h2>Gana más puntos con <em>la pregunta del día</em></h2>
+              <p>Cada día tendrás una pregunta futbolera. Contesta correctamente, suma puntos extra y acércate más rápido a tus recompensas.</p>
+            </div>
+            <span></span>
+          </div>
+
+          <div class="quiz-panel reveal stagger-1">
+            <div class="question-card">
+              <small><i class="ti ti-question-mark"></i> Pregunta del día</small>
+              <h3>¿Quién fue el portero mexicano del Juego de Leyendas 2024 disputado en Monterrey?</h3>
+              <button>A) Ángel Comizzo</button>
+              <button>B) Oswaldo Sánchez</button>
+              <button class="selected">C) Jorge Campos <i class="ti ti-check"></i></button>
+              <button>D) Hernán Cristante</button>
+              <div class="bonus"><i class="ti ti-star-filled"></i><strong>+25 PF</strong><span>por respuesta correcta</span></div>
+            </div>
+            <div class="quiz-metrics">
+              <article><i class="ti ti-calendar-event"></i><b>1</b><strong>Entra cada día</strong><p>Recibe una nueva pregunta futbolera diaria.</p></article>
+              <article><i class="ti ti-brain"></i><b>2</b><strong>Contesta correctamente</strong><p>Pon a prueba tu conocimiento de ligas, clubes, jugadores y torneos.</p></article>
+              <article><i class="ti ti-trophy"></i><b>3</b><strong>Suma puntos extra</strong><p>Gana puntos adicionales que se acumulan a los de tu suscripción semanal.</p></article>
+              <div class="metric-row">
+                <span><i class="ti ti-flame"></i><strong>Racha 5 días</strong><small>Bonus extra</small></span>
+                <span><i class="ti ti-clock"></i><strong>Nueva pregunta</strong><small>cada 24 horas</small></span>
+                <span><i class="ti ti-gift"></i><strong>Bonus semanal</strong><small>por constancia</small></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dark-heading reveal">
+            <span></span>
+            <div>
+              <h2>Gana más puntos con <em>desafíos</em></h2>
+              <p>Encuentra desafíos entretenidos que impulsan tu participación, sumando Puntos Futbol para subastar.</p>
+            </div>
+            <span></span>
+          </div>
+
+          <div class="challenge-panel reveal stagger-1">
+            <div class="challenge-list">
+              <article>
+                <i class="ti ti-calendar-plus"></i>
+                <div class="challenge-copy">
+                  <strong>Inicia sesión 5 días seguidos</strong>
+                  <small>4/5 completado</small>
+                </div>
+                <div class="challenge-progress"><span data-progress="80"></span></div>
+                <b><i class="ti ti-star-filled"></i>+50 PF</b>
+              </article>
+              <article>
+                <i class="ti ti-list-check"></i>
+                <div class="challenge-copy">
+                  <strong>Responde 10 preguntas del día</strong>
+                  <small>7/10 completado</small>
+                </div>
+                <div class="challenge-progress"><span data-progress="70"></span></div>
+                <b><i class="ti ti-star-filled"></i>+100 PF</b>
+              </article>
+              <article>
+                <i class="ti ti-users"></i>
+                <div class="challenge-copy">
+                  <strong>Invita a 30 amigos al programa</strong>
+                  <small>1/30 completado</small>
+                </div>
+                <div class="challenge-progress"><span data-progress="3"></span></div>
+                <b><i class="ti ti-star-filled"></i>+150 PF</b>
+              </article>
+            </div>
+            <aside>
+              <i class="ti ti-gift"></i>
+              <strong>Recompensas</strong>
+              <p>Completa desafíos y gana puntos extra.</p>
+              <img class="challenge-reward-img" src="app/img/desafios.avif" alt="Trofeo de recompensas">
+              <div class="challenge-summary">
+                <small>Tus puntos por desafíos</small>
+                <b>850 PF</b>
+                <div class="summary-progress" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <p>Siguiente recompensa: <strong>1,000 PF</strong></p>
+              </div>
+            </aside>
+          </div>
+
+          <div class="dark-heading winners-heading reveal" id="ganadores">
+            <span></span>
+            <div>
+              <h2>Conoce a los usuarios que ya <em>ganaron</em></h2>
+              <p>Únete a los ganadores de artículos futboleros y sé parte del club selecto Puntos Futbol.</p>
+            </div>
+            <span></span>
+          </div>
+
+          <div class="winners reveal stagger-1" data-winners-carousel>
+            <div class="winners-viewport">
+              <div class="winners-track">
+                <article>
+                  <em class="winner-user">JorgiRM10</em>
+                  <img class="winner-image" src="app/img/winner_1.avif" alt="Ganador con jersey Real Madrid">
+                  <strong>Jersey Real Madrid 23/24</strong>
+                </article>
+                <article>
+                  <em class="winner-user">Gabybol_SF</em>
+                  <img class="winner-image" src="app/img/winner_2.avif" alt="Ganadora con artículo adidas">
+                  <strong>Zapatos adidas X Speedportal</strong>
+                </article>
+                <article>
+                  <em class="winner-user">chiva_deco1</em>
+                  <img class="winner-image" src="app/img/winner_3.avif" alt="Ganador con jersey Chivas">
+                  <strong>Jersey Chivas 24/25</strong>
+                </article>
+                <article>
+                  <em class="winner-user">ramirez_YO1</em>
+                  <img class="winner-image" src="app/img/winner_4.avif" alt="Ganadora con balón adidas">
+                  <strong>Balón adidas Tiro Club</strong>
+                </article>
+                <article>
+                  <em class="winner-user">barra_fcb999</em>
+                  <img class="winner-image" src="app/img/winner_5.avif" alt="Ganador con bufanda FC Barcelona">
+                  <strong>Bufanda FC Barcelona</strong>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="unete">
+        <img class="sect-transition" src="app/img/transition-3.avif" alt="" aria-hidden="true">
+        <div class="container-fluid page-shell reveal py-5">
+          <h2>Únete ahora mismo</h2>
+          <p>Y demuestra tu <span>pasión futbolera</span></p>
+          <a href="#suscripcion">Suscríbeme ahora</a>
+        </div>
+        <img class="sect-transition" src="app/img/transition-4.avif" alt="" aria-hidden="true" style="position:absolute; top:100%; left:0; right:0; z-index: 1;">
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-fluid page-shell footer-shell">
+        <div class="footer-brand">
+          <img src="app/img/PuntosFutbol-logo.svg" alt="Puntos Futbol">
+          <p>Que nada detenga tu <span>pasión futbolera</span></p>
+        </div>
+        <nav class="footer-nav">
+          <div>
+            <a href="#subastas">Subastas</a>
+            <a href="#suscripcion">Suscripciones</a>
+            <a href="#puntos">Gana más puntos</a>
+          </div>
+          <div>
+            <a href="#login">Iniciar sesión</a>
+            <a class="footer-nav-cta" href="#unete">Suscribirme</a>
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluid page-shell footer-bottom">
+        <small>2026 Puntos Futbol. Todos los derechos reservados.</small>
+        <small>Hecho con pasión futbolera.</small>
+        <img src="app/img/powered-by-blue.svg" alt="Powered by BLUE">
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
